@@ -149,13 +149,13 @@ main {
 
 /* Disable Button when invalid */
 .form__contact:has(:invalid) .btn {
-    opacity: 0.7;
+    opacity: 0.5;
     pointer-events: none;
 }
 
 .form__item:has(:invalid:not(:placeholder-shown)) > .form__error,
 .form__message:has(:invalid:not(:placeholder-shown)) .form__error {
-    display: block;
+    visibility: visible;
 }
 
 .form__row {
@@ -164,7 +164,7 @@ main {
 }
 
 .form__item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-grow: 1;
     width: 50%;
 }
@@ -207,7 +207,7 @@ main {
 }
 
 .form__error {
-    display: none;
+    visibility: hidden;
     font-size: 1rem;
     color: #ff0c30;
     line-height: 1.5;
